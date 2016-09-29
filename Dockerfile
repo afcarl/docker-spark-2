@@ -66,7 +66,7 @@ ENV PATH /opt/conda/bin:$PATH
 
 #Create an env for python2.7
 RUN conda create -y --name python27 python=2.7
-RUN conda install -y -n python27 readline jupyter
+RUN conda install -y -n python27 readline jupyter numpy nltk
 
 #=======================================================================
 #Step 5: Setup ssh server necessary to run spark in standalone mode
@@ -87,7 +87,7 @@ RUN ssh-keyscan -H localhost >> /root/.ssh/known_hosts
 
 
 #=======================================================================
-#Step 6: Install tiny
+#Step 6: Install tini
 
 #Based on recommendations in http://jupyter-notebook.readthedocs.io/en/latest/public_server.html
 
