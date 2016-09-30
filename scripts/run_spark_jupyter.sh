@@ -15,7 +15,3 @@ PYSPARK_PYTHON=/opt/conda/envs/python27/bin/python \
 PYSPARK_DRIVER_PYTHON_OPTS="notebook --no-browser --port=8888 --ip='0.0.0.0'" \
 pyspark --master spark://`hostname`:7077
 
-#PYSPARK_PYTHON=jupyter \
-#PYSPARK_PYTHON_OPTS="notebook --no-browser --port=8888 --ip='0.0.0.0'" \
-# pyspark --master spark://`hostname`:7077
-
