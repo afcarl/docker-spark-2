@@ -8,7 +8,7 @@ A docker file for Spark with Python 2.7 Anaconda and Jupyter with Intellisense
 ## Building
 
 ```
-./build_image.sh
+./build-image.sh
 ```
 
 ## Starting
